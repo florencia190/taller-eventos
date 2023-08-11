@@ -1,5 +1,11 @@
 const div = document.getElementById("contenedor")
+const boton = document.getElementById("boton")
 
 div.addEventListener ("click", function () {
-    alert("Hola! Soy el div!")
+    if (event.target===boton){
+        return;
+    } else {
+        alert("Hola! Soy el div!")
+    }
+    
 });
